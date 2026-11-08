@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LANY — a beautiful blur.</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Ambient Blue Background Glows -->
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+
+  <!-- Background Audio Element (LANY - 13) -->
+  <audio id="bg-audio" loop>
+    <source src="LANY - 13.mp3" type="audio/mp3">
+  </audio>
+
+  <main class="page-container">
+
+    <!-- Floating Music Control Button -->
+    <button id="music-toggle-btn" class="music-pill" onclick="toggleMusic()">
+      🎵 Play Music (13 - LANY)
+    </button>
+
+    <!-- Top Navigation Tabs -->
+    <nav class="tab-nav">
+      <button class="nav-btn active" onclick="switchTab('letter', event)">the letter</button>
+      <button class="nav-btn" onclick="switchTab('gallery', event)">photo gallery</button>
+    </nav>
+
+    <!-- TAB 1: NEWSPAPER / POSTER LETTER -->
+    <div id="letter-tab" class="tab-content active">
+      <div class="newspaper-poster">
+        
+        <!-- Top Gothic Brand Header -->
+        <header class="poster-header">
+          <h1 class="brand-title">LANY</h1>
+          
+          <div class="meta-banner">
+            <span class="meta-item">Special Edition</span>
+            <span class="meta-item center-meta">a beautiful blur</span>
+            <span class="meta-item">final edition</span>
+          </div>
+        </header>
+
+        <!-- Main Headline -->
+        <div class="headline-block">
+          <h2 class="main-headline">ABOUT YOU</h2>
+        </div>
+
+        <!-- Featured Image Frame -->
+        <div class="hero-frame" onclick="openLightbox('2.png', 'hero photo', 'a beautiful blur')">
+          <img src="2.png" alt="Hero Memory Photo" class="poster-hero-img">
+        </div>
+
+        <!-- Quote Subtitle Banner -->
+        <div class="quote-banner">
+          <p class="lyric-quote">"DO YOU ONLY LOVE ME CAUSE YOU HAVE TO?"</p>
+        </div>
+
+        <!-- Newspaper Multi-Column Article Layout -->
+        <article class="newspaper-article">
+          
+          <!-- Column 1 -->
+          <div class="column col-left">
+            <p class="salutation-text">Hi Kyna, </p>
+            <p>I don’t know how to start pero I want to talk to you talaga for the longest time. I want to say that I’m thank you that I had the opportunity to have you and be with you for almost 5 years. Imagine that, nagsama tayong dalawa for almost 5 years and we we’re genuinely happy kaya I’m truly grateful for you. </p>
+            <p>Medyo late na tong message na to pero matagal ko na syang pinaplano I just can’t give myself a good enough reason to chat you again. I know I just hearted your messages that’s because hindi ko pa alam  anong sasabihin ko sayo that time. Nahirapan  din ako with all that’s going on, and that made me realize how you make my life a whole lot easier just by being there. Your presence lights up a path for me to take. It sounds cringe, yes but that’s the truth behind it. Madami tayong napag daanan sa loob ng 4 years at hindi lahat ng yon madali. Meron mga bagay na ang dali lang satin, meron din naman mga bagay na madali sakin pero mahirap sayo and vice versa. Mahirap sa totoo lang. Ang hirap hirap lalo na akala ko magiging okay ang lahat kasi I have friends, eh ang problem ayun medyo naubos sila HAHAHAHAHA.</p>
+            <div class="side-frame" onclick="openLightbox('4.png', 'blue room neon', 'remember this?')"><img src="4.png" alt="Side Memory Photo" class="side-img"></div>
+            <p>Sorry for giving up on us. Sorry if may mga plano tayong hindi natupad dahil sakin. Sorry dahil hindi ko na kinaya. Sorry dahil may mga bagay na dapat ginawa ko. Wala eh, siguro napagod na din ako. The other reason I wanted us to break up is that a question lingered in my head for a long time. “Sino ako kung wala ka?” and that’s the question I can’t answer. Kasi what have I really done for myself without thinking about you first? Ayun hindi ko masagot. Kyna bata pa tayo, and there is a world waiting for us, challenges we need to face alone in order to grow. Alam ko nabigyan kita ng mga magagandang aral kahit na hindi ako nagign 100% best of the best pag dating sa pagiging partner mo. Pero trust me I did my best. </p>
+          </div>
+
+          <!-- Column 2 (In-Article Photo + Extended Text) -->
+          <div class="column col-right">
+            <div class="side-frame" onclick="openLightbox('3.png', 'blue room neon', 'remember this?')">
+              <img src="3.png" alt="Side Memory Photo" class="side-img">
+            </div>
+
+            <!-- Dynamic Space for Your Personal Words -->
+            <div class="user-custom-block">
+              <p>Sa hinaba haba ng apat na taon nating pag sasama alam ko hinihiling mo sakin ay isang sulat na ako talaga ang nag sulat. This is me trying to give you the things you deserve that I couldn’t give during our time. So sana basahin and intindihin mo yung naka sulat I think eto dapat yung part na sesend ko sayo sa messenger AHHAHAHHAHA bahala na dba. </p>
+            </div>
+
+            <p> A lot has happened in my life when you left, madaming good pero sa tingin ko mas lamang ang bad hehe. Sorry if medyo may rant ng onti, madalang lang naman to HAHHAHAHAHA pero ayon na nga for the last year of our relationship there was something that I can feel changing. Somehow I can’t pinpoint what was, but now na wala na tayo for the longest time since we were together, I can’t pinpoint is because I myself is the one changing. I promise you, I truly loved you for who you are with all my heart alam mo yan. I just don’t know what happened and we became distant to each other and grew different ways even tho magkasama tayo. Alam mo yon yung feeling na yes mag kasama nga tayo physically pero mentally not? Ewan ko ang hirap explain pero alam ko alam mo yon kasi isa ka din sa naka experience neto.</p>
+            <p>So ayon, I just want to say my thanks to you how special you really are to me. And the things that I really wanted to tell you pero hindi na pede HAHAHAHHAHA. Super thank you talaga dahil sinamahan moko sa long journey na to, isipin mo yon simula highschool to senior highschool tapos start ng college. Kumbaga malapit na ma complete kulang nalang working stage HAHAHAHHAHA. If you wish to continue this conversation press 1 HAHAHHAHAHAHA. If you want me to get the fuck out of your life press 2.</p>
+
+            <div class="poster-signature">
+              <p class="sign-off">With all my love, always,</p>
+              <p class="sign-name">Me</p>
+            </div>
+          </div>
+
+        </article>
+
+        <!-- Footer Credits -->
+        <footer class="poster-footer">
+          <p>Design for memories that last forever.</p>
+        </footer>
+
+      </div>
+    </div>
+
+    <!-- TAB 2: PHOTO GALLERY -->
+    <div id="gallery-tab" class="tab-content">
+      <div class="gallery-wrapper">
+        <div class="gallery-header">
+          <h2 class="gallery-title">static memories</h2>
+          <p class="gallery-subtitle">click any photo to view full frame.</p>
+        </div>
+
+        <div class="gallery-grid">
+          <!-- Photo Card 1 -->
+          <div class="polaroid-card" onclick="openLightbox('1.png', 'Valentines', 'felt like a movie')">
+            <div class="image-wrapper"><img src="1.png" alt="Memory 01"></div>
+            <div class="polaroid-caption"><span class="cap-title">Valentines</span><span class="cap-date">felt like a movie</span></div>
+          </div>
+
+          <!-- Photo Card 2 -->
+          <div class="polaroid-card" onclick="openLightbox('2.png', 'Saying Goodbye', 'favorite place')">
+            <div class="image-wrapper"><img src="2.png" alt="Memory 02"></div>
+            <div class="polaroid-caption"><span class="cap-title">Saying Goodbye</span><span class="cap-date">favorite place</span></div>
+          </div>
+
+          <!-- Photo Card 3 -->
+          <div class="polaroid-card" onclick="openLightbox('3.png', 'Overnight', 'we laughed so hard')">
+            <div class="image-wrapper"><img src="3.png" alt="Memory 03"></div>
+            <div class="polaroid-caption"><span class="cap-title">Overnight</span><span class="cap-date">we laughed so hard</span></div>
+          </div>
+
+          <!-- Photo Card 4 -->
+          <div class="polaroid-card" onclick="openLightbox('4.png', 'Safe Place', 'never forgetting this')">
+            <div class="image-wrapper"><img src="4.png" alt="Memory 04"></div>
+            <div class="polaroid-caption"><span class="cap-title">Safe Place</span><span class="cap-date">never forgetting this</span></div>
+          </div>
+
+          <!-- Photo Card 5 -->
+          <div class="polaroid-card" onclick="openLightbox('5.png', 'Orange and Lemons', 'on repeat')">
+            <div class="image-wrapper"><img src="5.png" alt="Memory 05"></div>
+            <div class="polaroid-caption"><span class="cap-title">Orange and Lemons</span><span class="cap-date">on repeat</span></div>
+          </div>
+
+          <!-- Photo Card 6 -->
+          <div class="polaroid-card" onclick="openLightbox('6.png', 'Public', 'peaceful silence')">
+            <div class="image-wrapper"><img src="6.png" alt="Memory 06"></div>
+            <div class="polaroid-caption"><span class="cap-title">Public</span><span class="cap-date">peaceful silence</span></div>
+          </div>
+
+          <!-- Photo Card 8 (7 excluded) -->
+          <div class="polaroid-card" onclick="openLightbox('8.png', 'Fun Nights', 'looking up at the dark')">
+            <div class="image-wrapper"><img src="8.png" alt="Memory 08"></div>
+            <div class="polaroid-caption"><span class="cap-title">Fun Nights</span><span class="cap-date">looking up at the dark</span></div>
+          </div>
+
+          <!-- Photo Card 10 -->
+          <div class="polaroid-card" onclick="openLightbox('10.png', 'Reunion', 'captured in time')">
+            <div class="image-wrapper"><img src="10.png" alt="Memory 10"></div>
+            <div class="polaroid-caption"><span class="cap-title">Reunion</span><span class="cap-date">captured in time</span></div>
+          </div>
+
+          <!-- Photo Card 11 -->
+          <div class="polaroid-card" onclick="openLightbox('11.png', 'Late Night Whispers', 'night to remember')">
+            <div class="image-wrapper"><img src="11.png" alt="Memory 11"></div>
+            <div class="polaroid-caption"><span class="cap-title">late night whispers</span><span class="cap-date">night to remember</span></div>
+          </div>
+
+          <!-- Photo Card 12 -->
+          <div class="polaroid-card" onclick="openLightbox('12.png', 'Sunset Hues', 'golden skies')">
+            <div class="image-wrapper"><img src="12.png" alt="Memory 12"></div>
+            <div class="polaroid-caption"><span class="cap-title">sunset hues</span><span class="cap-date">golden skies</span></div>
+          </div>
+
+          <!-- Photo Card 14 (13 excluded) -->
+          <div class="polaroid-card" onclick="openLightbox('14.png', 'Subtle Shadows', 'just you and me')">
+            <div class="image-wrapper"><img src="14.png" alt="Memory 14"></div>
+            <div class="polaroid-caption"><span class="cap-title">subtle shadows</span><span class="cap-date">just you and me</span></div>
+          </div>
+
+          <!-- Photo Card 15 -->
+          <div class="polaroid-card" onclick="openLightbox('15.png', 'You', 'plus')">
+            <div class="image-wrapper"><img src="15.png" alt="Memory 15"></div>
+            <div class="polaroid-caption"><span class="cap-title">You</span><span class="cap-date">plus</span></div>
+          </div>
+
+          <!-- Photo Card 16 -->
+          <div class="polaroid-card" onclick="openLightbox('16.png', 'Me', 'manila')">
+            <div class="image-wrapper"><img src="16.png" alt="Memory 16"></div>
+            <div class="polaroid-caption"><span class="cap-title">Me</span><span class="cap-date">popmart</span></div>
+          </div>
+
+          <!-- Photo Card 17 -->
+          <div class="polaroid-card" onclick="openLightbox('17.png', 'Thali', 'and ching')">
+            <div class="image-wrapper"><img src="17.png" alt="Memory 17"></div>
+            <div class="polaroid-caption"><span class="cap-title">Thali</span><span class="cap-date">and chingr</span></div>
+          </div>
+
+          <!-- Photo Card 18 -->
+          <div class="polaroid-card" onclick="openLightbox('18.png', 'Warm Morning Light', 'slow mornings')">
+            <div class="image-wrapper"><img src="18.png" alt="Memory 18"></div>
+            <div class="polaroid-caption"><span class="cap-title">Warm Morning Light</span><span class="cap-date">slow mornings</span></div>
+          </div>
+
+          <!-- Photo Card 19 -->
+          <div class="polaroid-card" onclick="openLightbox('19.png', 'Forever Calls', 'staring at you instead')">
+            <div class="image-wrapper"><img src="19.png" alt="Memory 19"></div>
+            <div class="polaroid-caption"><span class="cap-title">Forever Calls</span><span class="cap-date">staring at you instead</span></div>
+          </div>
+
+          <!-- Photo Card 20 -->
+          <div class="polaroid-card" onclick="openLightbox('20.png', 'Nature', 'above the city')">
+            <div class="image-wrapper"><img src="20.png" alt="Memory 20"></div>
+            <div class="polaroid-caption"><span class="cap-title">Nature</span><span class="cap-date">above the city</span></div>
+          </div>
+
+          <!-- Photo Card 21 -->
+          <div class="polaroid-card" onclick="openLightbox('21.png', 'Dappled Light', 'Billiards')">
+            <div class="image-wrapper"><img src="21.png" alt="Memory 21"></div>
+            <div class="polaroid-caption"><span class="cap-title">dappled light</span><span class="cap-date">billiards</span></div>
+          </div>
+
+          <!-- Photo Card 22 -->
+          <div class="polaroid-card" onclick="openLightbox('22.png', 'Subtle Moments', 'want to last')">
+            <div class="image-wrapper"><img src="22.png" alt="Memory 22"></div>
+            <div class="polaroid-caption"><span class="cap-title">Subtle Moments</span><span class="cap-date">want to last</span></div>
+          </div>
+
+          <!-- Photo Card 23 -->
+          <div class="polaroid-card" onclick="openLightbox('23.png', 'vintage records', 'spinning vinyl')">
+            <div class="image-wrapper"><img src="23.png" alt="Memory 23"></div>
+            <div class="polaroid-caption"><span class="cap-title">vintage records</span><span class="cap-date">spinning vinyl</span></div>
+          </div>
+
+          <!-- Photo Card 24 -->
+          <div class="polaroid-card" onclick="openLightbox('24.png', 'Bring Back', 'electric blue')">
+            <div class="image-wrapper"><img src="24.png" alt="Memory 24"></div>
+            <div class="polaroid-caption"><span class="cap-title">Bring Back</span><span class="cap-date">electric blue</span></div>
+          </div>
+
+          <!-- Photo Card 25 -->
+          <div class="polaroid-card" onclick="openLightbox('25.png', 'USA', 'lost in the haze')">
+            <div class="image-wrapper"><img src="25.png" alt="Memory 25"></div>
+            <div class="polaroid-caption"><span class="cap-title">USA</span><span class="cap-date">lost in the haze</span></div>
+          </div>
+
+          <!-- Photo Card 26 -->
+          <div class="polaroid-card" onclick="openLightbox('26.png', 'Favorite Polo', 'inside jokes')">
+            <div class="image-wrapper"><img src="26.png" alt="Memory 26"></div>
+            <div class="polaroid-caption"><span class="cap-title">Favorite Polo</span><span class="cap-date">inside jokes</span></div>
+          </div>
+
+          <!-- Photo Card 27 -->
+          <div class="polaroid-card" onclick="openLightbox('27.png', 'Your Dress', 'the story')">
+            <div class="image-wrapper"><img src="27.png" alt="Memory 27"></div>
+            <div class="polaroid-caption"><span class="cap-title">Your Dress</span><span class="cap-date">the story</span></div>
+          </div>
+
+          <!-- Photo Card 28 -->
+          <div class="polaroid-card" onclick="openLightbox('28.png', 'Air Supply', 'Memorable')">
+            <div class="image-wrapper"><img src="28.png" alt="Memory 28"></div>
+            <div class="polaroid-caption"><span class="cap-title">Air Supply</span><span class="cap-date">Memorable</span></div>
+          </div>
+
+          <!-- Photo Card 29 -->
+          <div class="polaroid-card" onclick="openLightbox('29.png', 'Golden Hour Magic', 'everything glowed')">
+            <div class="image-wrapper"><img src="29.png" alt="Memory 29"></div>
+            <div class="polaroid-caption"><span class="cap-title">Golden Hour Magic</span><span class="cap-date">everything glowed</span></div>
+          </div>
+
+          <!-- Photo Card 30 -->
+          <div class="polaroid-card" onclick="openLightbox('30.png', 'dimly lit room', 'just talking for hours')">
+            <div class="image-wrapper"><img src="30.png" alt="Memory 30"></div>
+            <div class="polaroid-caption"><span class="cap-title">Dimly Lit Room</span><span class="cap-date">just talking for hours</span></div>
+          </div>
+
+          <!-- Photo Card 31 -->
+          <div class="polaroid-card" onclick="openLightbox('31.png', 'twilight glow', 'blue hour')">
+            <div class="image-wrapper"><img src="31.png" alt="Memory 31"></div>
+            <div class="polaroid-caption"><span class="cap-title">Twilight Glow</span><span class="cap-date">blue hour</span></div>
+          </div>
+
+          <!-- Photo Card 32 -->
+          <div class="polaroid-card" onclick="openLightbox('32.png', 'unspoken thoughts', 'we broke our rule')">
+            <div class="image-wrapper"><img src="32.png" alt="Memory 32"></div>
+            <div class="polaroid-caption"><span class="cap-title">Unspoken Thoughts</span><span class="cap-date">we broke our rule</span></div>
+          </div>
+
+          <!-- Photo Card 33 -->
+          <div class="polaroid-card" onclick="openLightbox('33.png', 'polaroid frame', 'snapshot memory')">
+            <div class="image-wrapper"><img src="33.png" alt="Memory 33"></div>
+            <div class="polaroid-caption"><span class="cap-title">Polaroid Frame</span><span class="cap-date">snapshot memory</span></div>
+          </div>
+
+          <!-- Photo Card 34 -->
+          <div class="polaroid-card" onclick="openLightbox('34.png', 'Bebangs', 'silhouettes')">
+            <div class="image-wrapper"><img src="34.png" alt="Memory 34"></div>
+            <div class="polaroid-caption"><span class="cap-title">Bebangs</span><span class="cap-date">silhouettes</span></div>
+          </div>
+
+          <!-- Photo Card 35 -->
+          <div class="polaroid-card" onclick="openLightbox('35.png', 'Second Time', 'early wake up')">
+            <div class="image-wrapper"><img src="35.png" alt="Memory 35"></div>
+            <div class="polaroid-caption"><span class="cap-title">Second Time</span><span class="cap-date">early wake up</span></div>
+          </div>
+
+          <!-- Photo Card 36 -->
+          <div class="polaroid-card" onclick="openLightbox('36.png', 'Distant Melodies', 'humming a tune')">
+            <div class="image-wrapper"><img src="36.png" alt="Memory 36"></div>
+            <div class="polaroid-caption"><span class="cap-title">Distant Melodies</span><span class="cap-date">humming a tune</span></div>
+          </div>
+
+          <!-- Photo Card 37 -->
+          <div class="polaroid-card" onclick="openLightbox('37.png', 'Star Smiles', 'twinkling lights')">
+            <div class="image-wrapper"><img src="37.png" alt="Memory 37"></div>
+            <div class="polaroid-caption"><span class="cap-title">Star Smiles</span><span class="cap-date">twinkling lights</span></div>
+          </div>
+
+          <!-- Photo Card 38 -->
+          <div class="polaroid-card" onclick="openLightbox('38.png', 'Something Fun', 'something to remember')">
+            <div class="image-wrapper"><img src="38.png" alt="Memory 38"></div>
+            <div class="polaroid-caption"><span class="cap-title">Something Fun</span><span class="cap-date">something to remember</span></div>
+          </div>
+
+          <!-- Photo Card 39 -->
+          <div class="polaroid-card" onclick="openLightbox('39.png', 'Angry', 'Hangry')">
+            <div class="image-wrapper"><img src="39.png" alt="Memory 39"></div>
+            <div class="polaroid-caption"><span class="cap-title">Angry</span><span class="cap-date">Hangry</span></div>
+          </div>
+
+          <!-- Photo Card 40 -->
+          <div class="polaroid-card" onclick="openLightbox('40.png', 'Our Night', 'hard to say goodbye')">
+            <div class="image-wrapper"><img src="40.png" alt="Memory 40"></div>
+            <div class="polaroid-caption"><span class="cap-title">Our Night</span><span class="cap-date">hard to say goodbye</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- LIGHTBOX MODAL FOR ENLARGING PHOTOS -->
+  <div id="lightbox-modal" class="lightbox">
+    <span class="close-btn" onclick="closeLightbox()">&times;</span>
+    <div class="lightbox-content">
+      <img id="lightbox-img" src="" alt="Enlarged Memory">
+      <div class="lightbox-caption">
+        <span id="lightbox-title" class="lightbox-title"></span>
+        <span id="lightbox-date" class="lightbox-date"></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Link to External JavaScript File -->
+  <script src="script.js"></script>
+
+</body>
+</html>
